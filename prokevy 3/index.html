@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kai Layton Art</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero-header">
+      <div class="hero-top">
+        <a class="top-button icon-art" href="index.html#gallery"><img src="images/nav bar/art button.png" alt="Gallery" /></a>
+        <a class="top-button icon-home" href="index.html"><img src="images/nav bar/home button.png" alt="Home" /></a>
+        <a class="top-button icon-help" href="index.html#faq"><img src="images/nav bar/FAQ.png" alt="FAQ" /></a>
+        <a class="top-button icon-contact" href="contact.html"><img src="images/nav bar/phone_for_contact_page.png" alt="Contact" /></a>
+        <a class="top-button icon-about" href="about.html"><img src="images/nav bar/about_me_button.png" alt="About Me" /></a>
+      </div>
+
+    </header>
+    <div class="main-banner">
+      <span class="footer-title">Kai Layton's Artwork</span>
+    </div>
+<!-- Banner styles for main page -->
+
+    <section class="slideshow-section">
+      <div class="slideshow-container">
+        <div class="slideshow-slide"><img src="images/artwork/IMG_0368.jpg" alt="Slide 1" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/IMG_0386.jpg" alt="Slide 2" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/IMG_0387.jpg" alt="Slide 3" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/IMG_0389.jpg" alt="Slide 5" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/IMG_0394.jpg" alt="Slide 6" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/IMG_1324.jpg" alt="Slide 7" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-CocaCola-Bar-Regular-Project-1-Final.jpg" alt="Slide 8" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-CocaCola-Bar-Seasonal-Variant-Valentines-Day-Project-1-Final.jpg" alt="Slide 9" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-CocaCola-Box-Project-1-Final.jpg" alt="Slide 10" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-CocaCola-Coconuts-Project-1-Final.jpg" alt="Slide 11" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-CocaCola-Semi-Truck-Project-1-Final.jpg" alt="Slide 12" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-Project-1-CocaCola-Billboard-Final.jpg" alt="Slide 13" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-Project-2-Poster-Final.png" alt="Slide 14" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-Project-2-SunRocks-Final.png" alt="Slide 15" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/Kai-Layton-Project-2-Ticket-Final.png" alt="Slide 16" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/KaiLayton_Scarab_Project2_Final.gif" alt="Slide 17" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/klayton-composite-21.jpg" alt="Slide 18" onclick="openModal(this.src)"></div>
+        <div class="slideshow-slide"><img src="images/artwork/poster-for-class.png" alt="Slide 19" onclick="openModal(this.src)"></div>
+      </div>
+      <div class="slideshow-dots">
+        <button class="slideshow-prev" onclick="changeSlide(-1)">&#10094;</button>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+        <span class="dot" onclick="currentSlide(17)"></span>
+        <span class="dot" onclick="currentSlide(18)"></span>
+        <span class="dot" onclick="currentSlide(19)"></span>
+        <button class="slideshow-next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-heading">
+        <h2>Gallery<img src="images/nav bar/art button.png" alt="Gallery" /></h2>
+      </div>
+      <div class="gallery-grid">
+        <article class="piece-card"><a class="piece-link" href="piece1.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0368.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 1</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece2.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0386.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 2</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece3.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0387.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 3</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece4.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0388.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 4</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece5.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0389.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 5</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece6.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_0394.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 6</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece7.html"><div class="piece-image" style="background-image: url('images/artwork/IMG_1324.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 7</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece8.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-CocaCola-Bar-Regular-Project-1-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 8</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece9.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-CocaCola-Bar-Seasonal-Variant-Valentines-Day-Project-1-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 9</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece10.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-CocaCola-Box-Project-1-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 10</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece11.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-CocaCola-Coconuts-Project-1-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 11</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece12.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-CocaCola-Semi-Truck-Project-1-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 12</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece13.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-Project-1-CocaCola-Billboard-Final.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 13</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece14.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-Project-2-Poster-Final.png'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 14</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece15.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-Project-2-SunRocks-Final.png'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 15</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece16.html"><div class="piece-image" style="background-image: url('images/artwork/Kai-Layton-Project-2-Ticket-Final.png'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 16</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece17.html"><div class="piece-image" style="background-image: url('images/artwork/KaiLayton_Scarab_Project2_Final.gif'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 17</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece18.html"><div class="piece-image" style="background-image: url('images/artwork/klayton-composite-21.jpg'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 18</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece19.html"><div class="piece-image" style="background-image: url('images/artwork/poster-for-class.png'); background-size: cover; background-position: center;"></div><div class="piece-label">Piece 19</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece20.html"><div class="piece-image" style="background-color: #222;"></div><div class="piece-label">Piece 20</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece21.html"><div class="piece-image" style="background-color: #222;"></div><div class="piece-label">Piece 21</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece22.html"><div class="piece-image" style="background-color: #222;"></div><div class="piece-label">Piece 22</div></a></article>
+        <article class="piece-card"><a class="piece-link" href="piece23.html"><div class="piece-image" style="background-color: #222;"></div><div class="piece-label">Piece 23</div></a></article>
+      </div>
+      <div class="gallery-footer">
+        <a class="gallery-footer-link" href="contact.html">Contact Me</a>
+        <a class="gallery-footer-link" href="about.html">About Me</a>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="faq-header">
+        <h2>FAQ<img src="images/nav bar/FAQ.png" alt="FAQ" /></h2>
+      </div>
+      <div class="faq-content">
+        <p class="faq-question">Question..................................................</p>
+        <p class="faq-answer">Answers......................................................</p>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-overlay">
+        <div class="footer-title">Kai Layton</div>
+        <div class="footer-subtitle">Thank you for visiting!</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img class="modal-image" id="modalImage" src="">
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+    
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("slideshow-slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].classList.add("active");
+    }
+    
+    // Initialize slideshow
+    showSlide(slideIndex);
+    
+    // Auto-advance slides every 5 seconds
+    setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+    
+    // Modal functions
+    function openModal(src) {
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = src;
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+    
+    function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+    
+    // Close modal when clicking outside the image
+    document.getElementById("imageModal").addEventListener("click", function(event) {
+      if (event.target === this) {
+        closeModal();
+      }
+    });
+    
+    // Close modal with ESC key
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piece 1 - Kai Layton Art</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const prevLink = document.querySelector('.nav-arrow.nav-left');
+      const nextLink = document.querySelector('.nav-arrow.nav-right');
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft' && prevLink) {
+          window.location.href = prevLink.href;
+        } else if (e.key === 'ArrowRight' && nextLink) {
+          window.location.href = nextLink.href;
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="page-shell piece-detail-page">
+    <header class="hero-header">
+      <div class="hero-top">
+        <a class="top-button icon-art" href="index.html#gallery"><img src="images/nav bar/art button.png" alt="Gallery" /></a>
+        <a class="top-button icon-home" href="index.html"><img src="images/nav bar/home button.png" alt="Home" /></a>
+        <a class="top-button icon-help" href="index.html#faq"><img src="images/nav bar/FAQ.png" alt="FAQ" /></a>
+        <a class="top-button icon-contact" href="contact.html"><img src="images/nav bar/phone_for_contact_page.png" alt="Contact" /></a>
+        <a class="top-button icon-about" href="about.html"><img src="images/nav bar/about_me_button.png" alt="About Me" /></a>
+      </div>
+    </header>
+    <section class="piece-detail">
+      <div class="piece-image"><img src="images/artwork/IMG_0368.jpg" alt="Piece 1"></div>
+      <h1 class="piece-detail-title">Piece 1</h1>
+      <p class="piece-page-description"> Add  artwork 1 description here.</p>
+      <a class="piece-back" href="index.html">Back to gallery</a>
+    </section>
+    <div class="piece-nav">
+        <a class="nav-arrow nav-left" href="piece23.html" aria-label="Previous piece">&#8592;</a>
+        <a class="nav-arrow nav-right" href="piece2.html" aria-label="Next piece">&#8594;</a>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-overlay">
+        <div class="footer-title">Kai Layton</div>
+        <div class="footer-subtitle">Thank you for visiting!</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
